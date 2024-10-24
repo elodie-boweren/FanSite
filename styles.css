@@ -1,0 +1,85 @@
+@media screen and (min-width:1600px) {
+    
+* {
+    background-color: blanchedalmond;
+    text-decoration: none;
+}
+main {
+margin-top: 5%;
+margin-right: 30%;
+height: 80em;
+}
+
+h1 {
+   text-shadow: 6px 6px 6px black;
+   font-size: 3em;
+}
+
+.intro {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.trio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:5em;
+    height: 80em;
+
+    
+    
+}
+
+.articleAda {
+    border:double 1em black;
+    display: flex;
+    align-items: center;
+    background-image: url(images/h1image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.articlemuriel {
+    border:double 1em black;
+    display: flex;
+    align-items: center;
+    background-image: url(images/gobliiins.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.articleHedy{
+    border:double 1em black;
+    display: flex;
+    align-items: center;
+    background-image: url(images/Hedyaccueil.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+    
+}
+
+p {
+    font-size: 2em;
+    height: 80%;
+    margin: 1em;
+    font-weight: bold;
+    background-color: rgb(255,255,255,0.7);
+    display: flex; /*pour le bouton*/
+    flex-direction: column;
+}
+
+button {
+    margin-top: 1em;
+    width: 50%;
+    margin-left: 4em;
+    margin-right: 4em;
+    background-color:  rgb(255,255,255,0.7);
+}
+button a {
+    background-color:  rgb(255,255,255,0.7);
+}
+}
