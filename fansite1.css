@@ -1,0 +1,155 @@
+@media screen and (min-width:1600px){ 
+
+* {   
+    list-style-type: none;
+    text-decoration:none;
+    box-sizing: border-box;
+    
+}   
+
+body {
+    background-image: url(images/bodyimage.jpg);
+    background-repeat: no-repeat;
+}
+
+
+header {   
+    display: flex;
+    align-items: center;
+    background-image: url(images/backgroundmain.jpg);
+    background-repeat:no-repeat;
+    margin-top: 2em;
+    margin-left: 2em;
+    height: 20em;
+    background-size: cover;  
+}
+
+header img {    
+    border-radius: 50%; 
+    height: 170%;
+    margin-top: 9em;  
+}
+
+.navheader{
+    width: 100%;   
+}
+
+.navheader ul {
+    display: flex;
+    height: 12em; /*pour qu'onn puisse voir le fond de header je definie la hauteur pour qu'elle diminue un peu*/
+    justify-content: space-around;
+    background-color: rgb(221 , 209 , 188, 0.6);
+}
+   
+   
+.navheader ul li {
+    display: flex;
+    align-items: center;
+
+}  
+
+
+
+ul li a { 
+    color: black;
+    text-shadow: #5F5D53 4px 4px;
+    font-size: 4em; 
+    font-weight: bold;
+    
+}
+
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-left: 2em;
+    margin-top: 15em;
+    margin-bottom: 15em;
+
+}
+
+h1 {
+    display: flex; 
+    justify-content: center;
+    font-size: 2em;
+    text-shadow: #c8ad8f 4px 4px;
+    font-family:Brush Script MT, Brush Script Std, cursive;      
+}
+
+.infoaccueil {
+    display: flex;
+    padding: 8%; /*pour que le fond algorithme se voit en dessous du background blanc*/
+    flex-direction: column;
+    background-image:url(images/h1image.png);  
+    text-align: center;
+    font-size: 3em; 
+}
+
+div {
+    background-color:rgb(255,255,255,0.6);
+    
+ }
+div h2 {
+     font-style: italic;
+}
+div p {
+    font-size: 2em;
+    font-style: italic;
+}
+
+button  {
+    font-size: 0.6em;
+    box-shadow: 6px 6px 6px #5F5D53;
+}
+button a  {
+    color: black;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background-image: url(images/backgroundmain.jpg);
+    background-repeat:no-repeat;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    margin-right: 2em; /*effet inverse de la navheader*/
+    height: 20em;
+    background-size: cover;  
+    border: solid;
+}
+
+.navfooter {
+    width: 100%;
+}
+.navfooter ul {
+    display: flex;
+    height: 12em; /*pour qu'onn puisse voir le fond de header je definie la hauteur pour qu'elle diminue un peu*/
+    justify-content: space-around;
+    background-color: rgb(221 , 209 , 188, 0.6);
+}
+
+.navfooter ul li {
+    display: flex;
+    align-items: center;
+}
+
+ul li a { 
+    color: black;
+    text-shadow: #5F5D53 4px 4px;
+    font-size: 4em; 
+    font-weight: bold;
+    
+}
+
+footer img {    
+    border-radius: 50%; 
+    height: 170%;
+    margin-bottom: 10em;
+}
+
+
+}
+
