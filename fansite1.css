@@ -149,6 +149,45 @@ footer img {
     margin-bottom: 10em;
 }
 
+.biographie {
+    background-color: #f9ecdc;
+    border:double 2em #5F5D53;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:5em;
 
 }
 
+.first {
+    display: flex;
+    flex-direction: column;
+}
+
+.first img {
+    width:100%;
+}
+
+.then {
+    display:flex;
+    flex-direction: column;
+}
+
+.then img {
+    width: 90%;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+.biographie p {
+    font-size: 2em;
+    margin-left: 1em;
+    font-weight: bold;
+}
+
+.présentation {
+    margin-left: 2em;
+    font-size: 6em;
+    font-family:Brush Script MT, Brush Script Std, cursive;
+}
+
+}
