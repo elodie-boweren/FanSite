@@ -1,0 +1,165 @@
+body{
+    background-color:#E0D0C1;
+}
+
+main{
+    margin:10px;
+    padding: 5px;
+}
+.image{
+    background-image:url(gobliiins.png);
+    background-size: contain;
+    background-position: top;
+    height:200px;
+    position: relative;
+}
+#menu{
+    display: flex;
+    justify-content:space-between;
+    margin:0;
+    padding:0;
+    list-style:none;
+    height:100%;
+    width:100%;
+}
+
+#menu li{
+    display:flex;
+    justify-content: center;
+    margin-right: 1px;
+}
+
+#menu li a{
+    display:flex;
+    padding:30px 25px;
+    color:#E0D0C1;
+    line-height: 1em;
+    text-align: center;
+    text-decoration:none;
+    width:100%;
+    font-size: large;
+    border-radius: 20px;
+}
+
+#menu li a:hover{
+    background-color: #A76D60;
+    text-decoration: underline;
+}
+
+nav{
+    background-color: #601700;
+    justify-content: space-between;
+    height:45%;
+    position:relative;
+    top: 30%;
+    border-radius: 20px;
+    opacity: 0.9;
+ }
+
+h1{
+    display: flex;
+    justify-content:center;
+    left:140px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size:50px;
+    color:#601700;
+}
+
+article{
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    border:2mm ridge;
+    border-color: #601700;
+    margin-top: 20px;
+}
+.jeux{
+    display: flex;
+    justify-content: center;
+}
+.jeux2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20%;
+}
+h2{
+    display: flex;
+    justify-content: center;
+}
+p{
+    display: flex;
+    justify-content: center;
+    margin:10px;
+}
+
+footer{
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.logo{
+color:#E0D0C1;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+opacity:0.9;
+}
+.one{
+    padding-top: 0.8cm;
+}
+.two{
+    padding-top: 0;
+}
+.three{
+    padding-top: 0;
+}
+.four{
+    padding-top: 0;
+}
+
+.photos{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:767px){
+   .logo{
+    height:2cm;
+   }
+   .paragraphes{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+}
+@media screen and (min-width:768px) and (max-width:1599px){
+    .logo{
+        height:2cm;
+       }
+    .paragraphes{
+        display: flex;
+    }
+    article{
+        margin:20px;
+    }
+    h2{
+        margin:10px;
+    }
+}
+@media screen and (min-width:1600px){
+    .logo{
+        height:2cm;
+       }
+    .paragraphes{
+        display: flex;
+    }
+    article{
+        margin:20px;
+    }
+    h2{
+        margin:10px;
+    }
+   
+
+}
