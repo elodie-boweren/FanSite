@@ -7,12 +7,12 @@
 } 
 
 body {
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background-image: url(images/Hedyaccueil.jpg);
+    background-size: cover;
+    background-position: center;
 }
 /*BARS DE NAVIGATION*/
 nav {
-    padding:1%;
     background-color:rgb(165,42,42,0.7);
 }
 
@@ -23,13 +23,14 @@ ul {
     justify-content:space-evenly;
     align-items:center;
     gap:20px;
+    font-weight: 900;
 }   
 
 .logohedy {
     width:12%;
     border-radius: 50%;
 }
-
+/*BODY*/
 main {
     display:flex;
     flex-flow: column wrap;
@@ -42,34 +43,12 @@ h1 {
 }
 
 section {
-    padding:2%;
+    padding:1%;
     display:flex;
     flex-direction:row;
-    gap:10px;
+    gap:3em;
     justify-content:center;
 } 
-
-.cinema {
-    width:38%;
-    align-content: center;
-    padding-right:2%;
-}
-
-.invention {
-    width:58%;
-    border:solid black;
-    padding:1%;
-}
-.portrait-Hedy {
-    width: 35%;
-    height:35%;
-}
-
-.presentation {
-    width:50%;
-    padding-left:1%;
-    line-height:2;
-}
 
 h2 {
     font-size:1.3em;
@@ -80,12 +59,12 @@ h2 {
 
 article {
     width:32%;
-    border:solid rgb(165,42,42,0.7);
+    border:solid rgb(165,42,42);
     display:flex;
     flex-direction:column;
     align-items:center;
     padding:3px;
-    border-style: double;
+    border-style: groove;
 }
 
 .photo-article {
@@ -93,13 +72,47 @@ article {
 }
 
 /*PARTIE MOSAIQUE PAGE REALISATIONS*/
-.photomosaic {
-    display:grid;
-    grid-template-areas: 1/3/1/4;
+.mosaic {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-content: center;
 }
+
+.liste-de-films {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    flex-wrap:wrap;
+}
+
+.filmo {
+    border:solid rgb(165,42,42);
+    border-style: groove;
+    width:45%;
+}
+
+.facts {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    list-style-type: disc;
+}
+
+.chrono {
+    border:none;
+    width:45%;
+}
+
+.liensvideo {
+    display:flex;
+    flex-direction:column;
+}
+
 .bottomnav {
     height:55px;
-    padding-bottom:2%;
+    padding:1%;
 }
 
 .logo {
@@ -110,21 +123,100 @@ article {
 /*MOBILE*/
 @media only screen and (max-width:768px) {
     article {
-        width:85%;
+        width:95%;
      }  
+     
+     section {
+        flex-wrap:wrap;
+        width:95%;
+     }
+
+     .portrait-Hedy {
+        width:80%;
+     }
+
+     .cinema {
+        width:95%;
+        align-content: center;
+        padding-right:2%;
+    }
+    
+    .invention {
+        width:95%;
+        border:solid black;
+        padding:1%;
+    }
+    
+    .presentation {
+        width:95%;
+        padding-left:1%;
+        line-height:2;
+    }
 }
-/*TABLETTES*/
+/*TABLETTES-ORDINATEURS*/
 @media only screen and (min-width:768px) and (max-width:1599px) {
     article {
         width:85%;
-     }   
+     }  
+     .portrait-Hedy {
+        width: 35%;
+        height:35%;
+    }
+
+    #photo-cache {
+        display:none;
+    }
+
+    .cinema {
+        width:38%;
+        align-content: center;
+        padding-right:2%;
+    }
+    
+    .invention {
+        width:58%;
+        border:solid black;
+        padding:1%;
+    }
+    
+    .presentation {
+        width:50%;
+        padding-left:1%;
+        line-height:2;
+    }
 }
 
-/*ORDINATEURS*/
+/*GRANDS ECRANS*/
 @media only screen and (min-width:1600px) {
     .présentation {
         width: 60%;
         padding:2%;
      }
+     .portrait-Hedy {
+        width: 35%;
+        height:35%;
+    }
+
+    #photo-cache {
+        display:none;
+    }
+
+    .cinema {
+        width:38%;
+        align-content: center;
+        padding-right:2%;
+    }
+    
+    .invention {
+        width:58%;
+        border:solid black;
+        padding:1%;
+    }
+    
+    .presentation {
+        width:50%;
+        padding-left:1%;
+        line-height:2;
+    }
 }
    

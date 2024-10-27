@@ -1,14 +1,210 @@
-@media screen and (min-width:1600px){ 
+
 * {   
     list-style-type: none;
     text-decoration:none;
     box-sizing: border-box;
-    
+    text-align: justify;
 }   
+
+html {
+    height: 100%;
+}
 
 body {
     background-image: url(images/bodyimage.jpg);
     background-repeat: no-repeat;
+    
+}
+
+.présentation h3 {
+    background-color: white;
+    padding: 0.5em;
+    border-bottom-style:double;
+    border-color: #5F5D53;
+    text-shadow: #5F5D53 4px 4px 4px;
+    border-top-style:double;
+    border-width: 0.3em;
+    text-align: center;
+    font-size: 3.5em;
+    font-family:Brush Script MT, Brush Script Std, cursive;
+    margin-top: 2.5em;
+    
+}
+
+.biographie {
+    background-color: #f9ecdc;
+    border:double 1em #5F5D53;
+}
+
+.biographie p {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.first img {
+    width: 80%;
+    margin-left: 1.5em;
+}
+
+.then img {
+    width: 80%;
+    margin-left: 1.5em;
+    margin-bottom: 0.5em;
+    
+}
+
+
+.ensemble {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em; 
+}
+
+
+@media only screen and (max-width: 768px){
+
+.navheader , .navfooter , .logofirst, .navfooterordinateur, .navheaderordinateur, .logoheaderordi, .logofooterordi {
+    display:none;
+}
+
+
+header {   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(images/backgroundmain.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;  
+    margin-top: 2em;
+    height: 10em;
+}
+
+.logotwo {
+    height: 160%;
+    border-radius:50%;
+    margin-top: 3em;
+}
+
+.navburger {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    background-color:  rgb(221 , 209 , 188, 0.6);
+    height: 7em;
+    width: 100%;   
+}
+
+.navburger p {
+    display: flex;
+    align-items: center;
+    font-family:Brush Script MT, Brush Script Std, cursive;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: #5F5D53 4px 4px 4px;
+}
+
+.navburger img {
+height: 6em;
+background-color:transparent;
+cursor:pointer;
+}        
+
+.button {
+background-color: transparent;
+border: none;
+cursor: pointer;   
+margin-top: 1.5em;
+}
+
+.button:hover{
+transition: all 0.5s;  
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-child {
+display: none;
+background-color: rgb(225, 225, 225,0.8);
+width: 18em;
+border: solid #5F5D53;
+}
+
+.dropdown-child a { 
+text-shadow: #5F5D53 4px 4px 4px;
+color: black;
+display: block;
+font-weight: bold;
+font-size: 2em;
+text-align: center;
+padding: 0.7em;
+}
+
+.dropdown:hover .dropdown-child {
+display: block;  
+}
+
+a:hover {
+border: 1px solid #5F5D53;
+box-shadow: 10px 5px 5px #5F5D53;
+}
+
+.house {
+font-size: 1.5em;
+}
+
+.présentation h3 {
+    background-color: white;
+    padding: 0.5em;
+    border-bottom-style:double;
+    border-color: #5F5D53;
+    text-shadow: #5F5D53 4px 4px 4px;
+    border-top-style:double;
+    border-width: 0.3em;
+    text-align: center;
+    font-size: 3.5em;
+    font-family:Brush Script MT, Brush Script Std, cursive;
+    margin-top: 2.5em;
+    
+}
+
+.biographie {
+    background-color: #f9ecdc;
+    border:double 1em #5F5D53;
+}
+
+.biographie p {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.first img {
+    width: 80%;
+    margin-left: 3em;
+}
+
+.then img {
+    width: 80%;
+    margin-left: 3em;
+    margin-bottom: 0.5em;
+    
+}
+
+}
+    
+
+@media only screen and (min-width:769px) and (max-width:1599px){
+    
+
+.navburger, .logotwo , .navheader , .navfooter, .logofirst {
+    display: none;
 }
 
 
@@ -17,94 +213,102 @@ header {
     align-items: center;
     background-image: url(images/backgroundmain.jpg);
     background-repeat:no-repeat;
+    background-size: cover;  
     margin-top: 2em;
     margin-left: 2em;
-    height: 20em;
-    background-size: cover;  
+    height: 22em;
 }
 
-header img {    
+.logoheaderordi {    
     border-radius: 50%; 
-    height: 170%;
-    margin-top: 9em;  
+    height: 30em;
+    margin-top: 7em;  
 }
 
-.navheader{
+.navheaderordinateur {
     width: 100%;   
 }
 
-.navheader ul {
+.navheaderordinateur ul {
     display: flex;
-    height: 12em; /*pour qu'onn puisse voir le fond de header je definie la hauteur pour qu'elle diminue un peu*/
+    height: 13em; /*pour qu'on puisse voir le fond de header je definie la hauteur pour qu'elle diminue un peu*/
     justify-content: space-around;
     background-color: rgb(221 , 209 , 188, 0.6);
 }
    
    
-.navheader ul li {
+.navheaderordinateur li {
+    margin-right: 3em;
     display: flex;
-    align-items: center;
-
+    flex-direction: column;
+    justify-content: space-around;
 }  
 
 
 
-ul li a { 
+.navheaderordinateur ul li a { 
     color: black;
     text-shadow: #5F5D53 4px 4px;
-    font-size: 4em; 
+    font-size: 4.2em; 
     font-weight: bold;
     
 }
 
+.house {
+    display: flex;
+    align-items: center;
+    font-size: 11em;
+    
+}
 
-
+.house a {
+    color: black;
+    text-shadow: #5F5D53 4px 4px 4px;
+}
 
 main {
     display: flex;
     flex-direction: column;
     width: 85%;
-    margin-left: 2em;
-    margin-top: 15em;
-    margin-bottom: 15em;
-
+    margin-left: 8em;
+    margin-top: 2em;
+    margin-bottom: 20em;  
+}
+.présentation h3 {
+        background-color: white;
+        padding: 0.5em;
+        border-bottom-style:double;
+        border-color: #5F5D53;
+        border-top-style:double;
+        text-align: center;
+        border-width: 20px;
+        font-size: 6em;
+        font-family:Brush Script MT, Brush Script Std, cursive;
 }
 
-h1 {
-    display: flex; 
-    justify-content: center;
-    font-size: 2em;
-    text-shadow: #c8ad8f 4px 4px;
-    font-family:Brush Script MT, Brush Script Std, cursive;      
+.biographie {
+    background-color: #f9ecdc;
+    border:double 1em #5F5D53;
 }
 
-.infoaccueil {
-    display: flex;
-    padding: 8%; /*pour que le fond algorithme se voit en dessous du background blanc*/
-    flex-direction: column;
-    background-image:url(images/h1image.png);  
-    text-align: center;
-    font-size: 3em; 
+.biographie p {
+    font-size: 3em;
+    font-weight: bold;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
-div {
-    background-color:rgb(255,255,255,0.6);
+.first img {
+    width: 70%;
+    margin-left: 9.8em;
     
- }
-div h2 {
-     font-style: italic;
-}
-div p {
-    font-size: 2em;
-    font-style: italic;
 }
 
-button  {
-    font-size: 0.6em;
-    box-shadow: 6px 6px 6px #5F5D53;
-}
-button a  {
-    color: black;
+.then img {
+    width: 80%;
+    margin-left: 7em;
+    margin-bottom: 2em;
+    
 }
 
 footer {
@@ -112,82 +316,195 @@ footer {
     align-items: center;
     background-image: url(images/backgroundmain.jpg);
     background-repeat:no-repeat;
-    margin-top: 4em;
-    margin-bottom: 2em;
     margin-right: 2em; /*effet inverse de la navheader*/
     height: 20em;
     background-size: cover;  
-    border: solid;
+
 }
 
-.navfooter {
-    width: 100%;
+.navfooterordinateur {
+  width: 100%;
 }
-.navfooter ul {
+
+.navfooterordinateur ul {
     display: flex;
-    height: 12em; /*pour qu'onn puisse voir le fond de header je definie la hauteur pour qu'elle diminue un peu*/
+    height: 12em; /*pour qu'on puisse voir le fond de header je definie la hauteur pour qu'elle diminue un peu*/
     justify-content: space-around;
     background-color: rgb(221 , 209 , 188, 0.6);
 }
 
-.navfooter ul li {
+.navfooterordinateur ul li {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-ul li a { 
+.navfooterordinateur ul li a { 
     color: black;
     text-shadow: #5F5D53 4px 4px;
-    font-size: 4em; 
+    font-size: 4.5em; 
     font-weight: bold;
     
 }
 
-footer img {    
+.logofooterordi {    
     border-radius: 50%; 
-    height: 170%;
-    margin-bottom: 10em;
+    height: 27em;
+    margin-bottom: 6em;  
 }
-
-.biographie {
-    background-color: #f9ecdc;
-    border:double 2em #5F5D53;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap:5em;
 
 }
 
-.first {
-    display: flex;
-    flex-direction: column;
-}
+@media screen and (min-width:1600px) { 
 
-.first img {
-    width:100%;
-}
-
-.then {
-    display:flex;
-    flex-direction: column;
-}
-
-.then img {
-    width: 90%;
-    margin-left: 2em;
-    margin-top: 1em;
-}
-
-.biographie p {
-    font-size: 2em;
-    margin-left: 1em;
-    font-weight: bold;
-}
-
-.présentation {
-    margin-left: 2em;
-    font-size: 6em;
-    font-family:Brush Script MT, Brush Script Std, cursive;
-}
-
+    .navburger, .logotwo, .logofooterordi, .logoheaderordi , .navheaderordinateur, .navfooterordinateur{
+        display: none;
+    }
+    
+    
+    header {   
+        display: flex;
+        align-items: center;
+        background-image: url(images/backgroundmain.jpg);
+        background-repeat:no-repeat;
+        background-size: cover;  
+        margin-top: 2em;
+        margin-left: 2em;
+        height: 20em;
+    }
+    
+    header img {    
+        border-radius: 50%; 
+        height: 30em;
+        margin-top: 9em;  
+    }
+    
+    .navheader{
+        width: 100%;   
+    }
+    
+    .navheader ul {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(221 , 209 , 188, 0.6);
+        height: 12em; 
+    }
+       
+       
+    .navheader ul li {
+        display: flex;
+        align-items: center;
+    }  
+    
+    
+    
+.navheader ul li a { 
+        color: black;
+        text-shadow: #5F5D53 4px 4px;
+        font-size: 4em; 
+        font-weight: bold;
+        
+    }
+    
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin-left: 8em;
+        margin-top: 2em;
+        margin-bottom: 20em;  
+    }
+    
+    .présentation h3 {
+        background-color: white;
+        padding: 0.5em;
+        border-bottom-style:double;
+        border-color: #5F5D53;
+        border-top-style:double;
+        text-align: center;
+        border-width: 20px;
+        font-size: 6em;
+        font-family:Brush Script MT, Brush Script Std, cursive;
+        
+    }
+    
+    .biographie {
+        background-color: #f9ecdc;
+        border:double 2em #5F5D53;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:5em;
+        
+    }
+    
+    .first {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .first img {
+        width:100%;
+        margin-left: 1em;
+    }
+    
+    .then {
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .then img {
+        width: 90%;
+        margin-top: 1em;
+        
+    }
+    
+    .biographie p {
+        font-size: 2em;
+        margin-left: 1em;
+        font-weight: bold;
+    }
+    
+    
+    footer {
+        display: flex;
+        align-items: center;
+        background-image: url(images/backgroundmain.jpg);
+        background-repeat:no-repeat;
+        margin-right: 2em; /*effet inverse de la navheader*/
+        height: 20em;
+        background-size: cover;  
+    
+    }
+    
+    .navfooter {
+        width: 100%;
+    }
+    
+    .navfooter ul {
+        display: flex;
+        height: 12em; /*pour qu'onn puisse voir le fond de header je definie la hauteur pour qu'elle diminue un peu*/
+        justify-content: space-around;
+        background-color: rgb(221 , 209 , 188, 0.6);
+    }
+    
+    .navfooter ul li {
+        display: flex;
+        align-items: center;
+    }
+    
+    ul li a { 
+        color: black;
+        text-shadow: #5F5D53 4px 4px;
+        font-size: 4em; 
+        font-weight: bold;
+        
+    }
+    
+    footer img {    
+        border-radius: 50%; 
+        height: 30em;
+        margin-bottom: 7em;  
+    }
+    
 }

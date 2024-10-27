@@ -1,0 +1,17 @@
+h1{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    display: flex;
+    justify-content: left;
+}
+
+.envoyer{
+    display: flex;
+    justify-content: center;
+    border: 2px solid;
+    padding:10px;
+    box-shadow: 6px -4px;
+    border-radius: 20cm;
+}
