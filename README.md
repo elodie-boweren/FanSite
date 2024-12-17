@@ -21,4 +21,7 @@ les informations suivantes :
 ➔ Et tout ce que vous jugerez utile  
 La navigation sur l’ensemble de ces pages doit pouvoir se faire depuis un
 header ET un footer. Structurez votre code et utilisez un maximum de balise
-HTML5.
+HTML5.  
+
+
+Our group of 3 chose "women who revolutionized the IT world" as a topic for our fansite. We set out basic rules for our 3 websites to look similar and create some sort of uniformity. 
